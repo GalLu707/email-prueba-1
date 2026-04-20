@@ -35,7 +35,17 @@ public class JavaLook {
     }
 
     private static void login() {
-        boolean haycuantas = false;
+        boolean haycuentas = false;
+        for (EmailAccount acc : cuentas){
+            if (acc != null) {
+                haycuentas = true;
+                break;
+            }
+        }
+        if (!haycuentas) {
+            System.out.println("ERROR: no hay cuentas registradas en el sistema :c");
+            return;
+        }
         System.out.print("Email: ");
         String correo = scn.next();
         System.out.print("Password: ");
