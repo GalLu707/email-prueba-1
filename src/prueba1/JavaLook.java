@@ -46,6 +46,7 @@ public class JavaLook {
             System.out.println("ERROR: no hay cuentas registradas en el sistema :c");
             return;
         }
+        //verifica si hay cuentas creadas /\
         System.out.print("Email: ");
         String correo = scn.next();
         System.out.print("Password: ");
@@ -132,7 +133,7 @@ public class JavaLook {
                 return;
             }
         }
-        System.out.println("Destinatario no existe.");
+        System.out.println("Destinatario no existe");
     }
     
     
