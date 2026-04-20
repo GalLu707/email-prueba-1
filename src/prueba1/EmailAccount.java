@@ -62,7 +62,7 @@ public class EmailAccount {
                 if (!inbox[i].isleido()) sinLeer++;
                 
                 System.out.printf("%d - %s - %s - (%s)\n", 
-                    i, inbox[i].getEmisor(), inbox[i].getAsunto(), estado);
+                    (i+1) , inbox[i].getEmisor(), inbox[i].getAsunto(), estado);
             }
         }
         System.out.println("Correos sin leer: " + sinLeer);
